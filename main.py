@@ -12,8 +12,14 @@ st.set_page_config(
 
 with st.sidebar:
     st.header("Information")
+    st.subheader("Model Info")
+    st.text("Project is using pretrained model from hugging face:\n" \
+    "j-hartmann/emotion-english-distilroberta-base")
 
+    st.subheader("Purpose")
+    st.text("Project meant as a test run for bigger project which uses emotions classificatoin through prompts")
 
+    
 
 prompt = st.text_input("Enter a Prompt")
 run_button = st.button("Run Emotion Model", type="primary")
